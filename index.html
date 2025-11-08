@@ -104,42 +104,22 @@
         return;
     }
 
-    // Build suggestions list dynamically
+   
     suggestionsBox.innerHTML = data.map(city => 
         `<div class="suggestion-item" data-city="${city.name}">${city.name}, ${city.country}</div>`
     ).join("");
 
-    // Add click event to suggestions to fill input and trigger weather fetch
     document.querySelectorAll(".suggestion-item").forEach(item => {
         item.addEventListener("click", (e) => {
             const selectedCity = e.target.getAttribute("data-city");
             searchBox.value = selectedCity;
             suggestionsBox.innerHTML = "";
-            checkWeather(selectedCity);   // Your existing function to get weather
+            checkWeather(selectedCity);   
         });
     });
 });
 
-// Optional: Add CSS to style suggestion box     (add to your style.css)
-/*
-#suggestions {
-    background: white;
-    color: black;
-    max-width: 470px;
-    margin: 0 auto;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 100;
-}
-.suggestion-item {
-    padding: 10px;
-    cursor: pointer;
-}
-.suggestion-item:hover {
-    background-color: #00feba;
-    color: white;
-}
-*/
+
 
     
 
