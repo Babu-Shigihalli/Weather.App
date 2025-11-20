@@ -26,7 +26,7 @@ A simple and responsive  Weather App  built using  HTML, CSS, and JavaScript , w
 1. Go to [OpenWeatherMap](https://openweathermap.org/api)
 2. Sign up for a free account
 3. Generate an API key
-4. Replace the `apiKey` value in your JavaScript code:
+4. Replace the `apiKey` value in your JavaScript code
 ---
 
 
@@ -34,6 +34,11 @@ A simple and responsive  Weather App  built using  HTML, CSS, and JavaScript , w
 * 🔍 Add live autocomplete suggestions for city names
 * 📍 Add “Use my location” (GPS-based weather)
 * 🌃 Change background dynamically based on weather condition
-* 🕒 Display local time and date of the city
+
+
+
+
+
+
 
 
